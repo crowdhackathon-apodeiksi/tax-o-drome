@@ -1,0 +1,27 @@
+<ion view view-title="registration">
+	<ion content class="pading">
+		<div class="list">
+			<label class="item item-input item-floating-label">
+				<span class="input-label">Όνομα</span>
+				<input type="text" placeholder="Όνομα" ng-model="user.name">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">Επώνυμο</span>
+				<input type="text" placeholder="Επώνυμο" ng-model="user.surname">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">ΑΦΜ</span>
+				<input type="tel" placeholder="ΑΦΜ" ng-model="user.tim">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">E-mail</span>
+				<input type="e-mail" placeholder="e-mail" ng-model="user.email">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">Τηλέφωνο</span>
+				<input type="tel" placeholder="Τηλέφωνο" ng-model="user.tel">
+			</label>
+			<button style="" class="button button-dark button-block" ng-click="processWithDash()">Επιβεβαίωση</button>
+		</div>
+	</ion>
+</ion>

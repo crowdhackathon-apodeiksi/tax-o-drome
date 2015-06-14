@@ -1,0 +1,33 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="padding">
+    <ion-list class="item-icon-right">
+      <ion-item href="" ui-sref="tab.receipt-business-list({id:0})">
+        Zara's
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <span class="badge badge-positive">
+          40 <span class="ion-social-euro"></span>
+        </span>
+      </ion-item>
+      <ion-item href="" ui-sref="tab.receipt-business-list({id:1})">
+        Pull &amp; Bear
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <span class="badge badge-positive">
+          30 <span class="ion-social-euro"></span>
+        </span>
+      </ion-item>
+      <ion-item href="" ui-sref="tab.receipt-business-list({id:1})">
+        Foot Locker
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <span class="badge badge-positive">
+          30 <span class="ion-social-euro"></span>
+        </span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

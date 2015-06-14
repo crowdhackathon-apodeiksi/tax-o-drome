@@ -1,0 +1,18 @@
+<ion-view style="" title="Εγγραφή">
+    <ion-content class="has-header" scroll="false" padding="true">
+        <form style="">
+            <ion-list style="">
+                <label style="" class="item item-input">
+                    <input placeholder="Όνομα χρήστη" type="text" ng-model="user.username">
+                </label>
+                <label style="" class="item item-input">
+                    <input placeholder="Κωδικός" type="password" ng-model="user.password">
+                </label>
+                <label style="" class="item item-input">
+                    <input placeholder="Επιβεβαίωση" type="password" ng-model="user.retype">
+                </label>
+            </ion-list>
+            <button style="" class="button button-dark button-block" ng-if="user.password===user.retype" ng-click="processWithRegistration(user)">Εγγραφή</button>
+        </form>
+    </ion-content>
+</ion-view>

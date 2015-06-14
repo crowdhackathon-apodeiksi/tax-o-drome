@@ -1,0 +1,32 @@
+<ion-view view-title="Καινούρια απόδειξη">
+	<ion-content class="padding">
+		<div class="list" ng-show="!imageURI">
+			<label class="item item-input item-floating-label">
+				<button class="button button-block button-positive" ng-click="getPhoto()">Φωτογράφισε την Απόδειξη</button>
+			</label>
+			<label class="item item-input item-floating-label">
+				<button class="button button-block button-positive" ng-click="processWithQR()">Σάρωση με QR</button>
+			</label>
+			<label class="item item-input item-floating-label">
+				<button class="button button-clear  button-positive" ng-click="processWithHelp()">
+				  Βοήθεια
+				</button>
+			</label>
+		</div>
+		<ion-list class="item-avatar" ng-show="imageURI">
+			<ion-item class="item-body">
+				<img class="full-image" src="{{imageURI}}">
+			</ion-item>
+			<ion-item class="tabs tabs-secondary tabs-icon-left">
+		        <a class="tab-item" ng-click="processWithOCR(imageURI)">
+		          <i class="icon ion-quote"></i>
+		          Οπτική Αναγνώρηση
+		        </a>
+		        <a class="tab-item" ng-click="cancel()">
+		          <i class="icon ion-quote"></i>
+		          Ακύρωση
+		        </a>
+		      </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

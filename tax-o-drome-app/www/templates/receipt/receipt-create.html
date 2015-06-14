@@ -1,0 +1,39 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Πρόσθεσε νέα απόδειξη">
+  <ion-content class="padding">
+  	<div class="list">
+  	<label class="item item-input item-floating-label">
+  		<span class="input-label">Επωνυμία</span>
+  		<input type="text" placeholder="Επωνυμία">
+  	</label>
+  	<label class="item item-input item-floating-label">
+  		<span class="input-label">ΑΦΜ</span>
+  		<input type="tel" placeholder="ΑΦΜ" ng-model="receipt.business">
+  	</label>
+  	<label class="item item-input item-floating-label">
+  		<span class="input-label">ΑΑ</span>
+  		<input type="tel" placeholder="ΑΑ απόδειξης" ng-model="receipt.rid">
+  	</label>
+  	<label class="item item-input item-floating-label">
+  		<span class="input-label">Ημερομηνία</span>
+  		<input type="text" placeholder="Ημερομηνία" ng-model="receipt.transaction_date">
+  	</label>
+  	<label class="item item-input item-floating-label">
+  		<span class="input-label">Συνολική Αξία</span>
+  		<input type="tel" placeholder="Συνολική αξία" ng-model="receipt.total_amount">
+  	</label>
+  	<label class="item item-input item-floating-label">
+  		<span class="input-label">ΦΠΑ</span>
+  		<input type="tel" placeholder="Αξία ΦΠΑ" ng-model="receipt.total_vat">
+  	</label>
+  	<label class="item item-input item-floating-label">
+		<button class="button button-block button-positive" ng-click="submit(receipt)">Καταχώρησε Απόδειξη</button>
+	</label>
+  	</div>
+  </ion-content>
+</ion-view>

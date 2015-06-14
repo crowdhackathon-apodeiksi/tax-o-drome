@@ -1,0 +1,31 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    <div class="list">
+		<label class="item item-input item-floating-label">
+			<span class="input-label">{{ user.name }}</span>
+			<input type="text" placeholder="Όνομα">
+		</label>
+		<label class="item item-input item-floating-label">
+			<span class="input-label">{{ user.surname }}</span>
+			<input type="text" placeholder="Επώνυμο">
+		</label>
+		<label class="item item-input item-floating-label">
+			<span class="input-label">{{ user.tim }}</span>
+			<input type="tel" placeholder="ΑΦΜ">
+		</label>
+		<label class="item item-input item-floating-label">
+			<span class="input-label">{{ user.email }}</span>
+			<input type="e-mail" placeholder="e-mail">
+		</label>
+		<label class="item item-input item-floating-label">
+			<span class="input-label">{{ user.tel }}</span>
+			<input type="tel" placeholder="Τηλέφωνο">
+		</label>
+	</div>
+    </ion-list>
+  </ion-content>
+</ion-view>
