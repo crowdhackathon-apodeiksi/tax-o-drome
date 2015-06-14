@@ -1,0 +1,9 @@
+argparse
+defusedxml
+django-cors-headers
+django-filter
+djangorestframework
+djangorestframework-jwt
+djangorestframework-xml
+wsgiref==0.1.2
+python-dateutil
